@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 class size {
   static double sizeTextHeaderGlobal = 25.0;

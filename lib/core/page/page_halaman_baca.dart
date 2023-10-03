@@ -6,6 +6,7 @@ import 'package:flutter_quran_karim/core/widget/label/text_description.dart';
 import 'package:flutter_quran_karim/model/model_qori.dart';
 import 'package:flutter_quran_karim/model/model_surat_alfatihah.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_quran_karim/res/dimension/size.dart';
 import 'package:get/get.dart';
 
 import '../../model/model_surat.dart';

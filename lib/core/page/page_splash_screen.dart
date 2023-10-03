@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_quran_karim/core/page/page_halaman_utama.dart';
 import 'package:flutter_quran_karim/core/widget/label/text_description.dart';
 import 'package:flutter_quran_karim/res/colors/list_color.dart';
+import 'package:flutter_quran_karim/res/dimension/size.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';

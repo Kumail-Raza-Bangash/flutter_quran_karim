@@ -4,6 +4,7 @@ import 'package:flutter_quran_karim/core/page/page_halaman_baca.dart';
 import 'package:flutter_quran_karim/core/widget/label/text_description.dart';
 import 'package:flutter_quran_karim/model/model_doa.dart';
 import 'package:flutter_quran_karim/res/colors/list_color.dart';
+import 'package:flutter_quran_karim/res/dimension/size.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:flutter_svg/svg.dart';
