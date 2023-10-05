@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+// ignore: must_be_immutable
 class ComponentTextDescription extends StatelessWidget {
   String? textContent;
   TextAlign textAlign;
@@ -12,7 +12,7 @@ class ComponentTextDescription extends StatelessWidget {
   int? maxLines;
   bool? isWrappedText;
   ComponentTextDescription(this.textContent,
-      {this.textAlign = TextAlign.start,
+      {super.key, this.textAlign = TextAlign.start,
       this.teksColor = Colors.black,
       required this.fontSize,
       this.fontWeight = FontWeight.normal,
@@ -20,11 +20,12 @@ class ComponentTextDescription extends StatelessWidget {
       this.isWrappedText});
   @override
   Widget build(BuildContext context) {
+    // ignore: todo
     // TODO: implement build
     return _textDesc(
         textDesc: textContent.toString(),
         textAlign: textAlign,
-        teksColor: this.teksColor);
+        teksColor: teksColor);
   }
 
   Widget _textDesc(
@@ -32,7 +33,7 @@ class ComponentTextDescription extends StatelessWidget {
       textAlign = TextAlign.center,
       Color teksColor = Colors.black}) {
     return Text(
-      "$textDesc",
+      textDesc,
       style: GoogleFonts.poppins(
           fontSize: fontSize.sp, fontWeight: fontWeight, color: teksColor),
       textAlign: textAlign,
