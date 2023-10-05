@@ -29,11 +29,11 @@ class MainApp extends StatelessWidget {
                 transition: Transition.fadeIn),
             GetPage(
                 name: PageHalamanUtama.routeName.toString(),
-                page: () => PageHalamanUtama(),
+                page: () => const PageHalamanUtama(),
                 transition: Transition.leftToRight),
             GetPage(
                 name: PageHalamanBaca.routeName.toString(),
-                page: () => PageHalamanBaca(),
+                page: () => const PageHalamanBaca(),
                 transition: Transition.rightToLeft),
           ],
         );

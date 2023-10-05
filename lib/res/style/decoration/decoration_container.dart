@@ -6,8 +6,8 @@ class DecorationContainer {
   static BoxDecoration boxDecorationDefault = BoxDecoration(
     gradient: LinearGradient(
       colors: [
-        ListColor.gradientTopColor, // #08F4F9
-        ListColor.gradientBottomColor
+        Color.fromARGB(255, 75, 187, 119), // #08F4F9
+        Color.fromARGB(255, 1, 65, 27)
       ],
       begin: Alignment.topCenter,
       end: Alignment.bottomCenter,

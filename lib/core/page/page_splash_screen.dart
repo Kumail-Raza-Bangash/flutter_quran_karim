@@ -71,7 +71,17 @@ class _PageHalamanSplashScreenState extends State<PageHalamanSplashScreen> {
                 fontSize: size.sizeTextDescriptionGlobal.sp,
                 fontWeight: FontWeight.bold,
                 teksColor: ListColor.warnaTeksPutihGlobal,
-              )
+              ),
+              SizedBox(
+                height: 20.h,
+                ),
+                
+                ComponentTextDescription(
+                  "theKami",
+                  fontSize: size.sizeTextDescriptionGlobal.sp,
+                  fontWeight: FontWeight.bold,
+                  teksColor: ListColor.warnaTeksPutihGlobal,
+                  ),
             ],
           ),
         )

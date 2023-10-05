@@ -1,26 +1,27 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_quran_karim/core/page/page_halaman_baca.dart';
 import 'package:flutter_quran_karim/core/widget/label/text_description.dart';
-import 'package:flutter_quran_karim/model/model_doa.dart';
+import 'package:flutter_quran_karim/model/model_juz.dart';
 import 'package:flutter_quran_karim/res/colors/list_color.dart';
 import 'package:flutter_quran_karim/res/dimension/size.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../model/model_juz.dart';
+import '../../model/model_doa.dart';
 import '../controller/controller_halaman_utama.dart';
 
 class PageHalamanUtama extends StatefulWidget {
   static String? routeName = "/PageHalamanUtama";
 
+  const PageHalamanUtama({Key? key}) : super(key: key);
+
   @override
   State<PageHalamanUtama> createState() => _PageHalamanUtamaState();
 }
+
 
 class _PageHalamanUtamaState extends State<PageHalamanUtama> {
   int selectedIndex = 0;
@@ -29,21 +30,20 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     ControllerHalamanUtama.fetchDataJuz().then((juzData) {
-      // Set your controller's value here
       controller.listJuz.value = juzData;
     }).catchError((error) {
       // Handle the error here
     });
   }
 
+
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
-      body: Stack(children: [
+      body: Stack(
+        children: [
         Image.asset(
           "assets/icon/wp_background.png",
           width: double.infinity,
@@ -72,7 +72,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                               teksColor: ListColor.warnaTeksPutihGlobal,
                             ),
                             ComponentTextDescription(
-                              "Baca Al-Quran Dengan Mudah",
+                              "Read the Quran easily",
                               fontSize: size.sizeTextDescriptionGlobal.sp,
                               fontWeight: FontWeight.w500,
                               teksColor: ListColor.warnaTeksPutihGlobal,
@@ -101,7 +101,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       ComponentTextDescription(
-                        "Terakhir Dibaca",
+                        "Last Read ",
                         fontSize: size.sizeTextDescriptionGlobal.sp,
                         fontWeight: FontWeight.bold,
                         teksColor: ListColor.warnaTeksPutihGlobal,
@@ -122,7 +122,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: ComponentTextDescription(
-                                  "Harap Baca Surah Terlebih Dahulu",
+                                  "Please Read Surah First",
                                   fontSize: size.sizeTextDescriptionGlobal.sp,
                                 ),
                               ),
@@ -200,7 +200,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       ComponentTextDescription(
-                        "Kategori",
+                        "Category",
                         fontSize: size.sizeTextDescriptionGlobal.sp,
                         fontWeight: FontWeight.bold,
                         teksColor: ListColor.warnaTeksPutihGlobal,
@@ -307,6 +307,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
     );
   }
 
+  
   Widget cardDoa(
       {String? noDoa, String? namaDoa, String? doaArab, String? doaLatin}) {
     return Padding(
@@ -489,6 +490,8 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
     );
   }
 
+
+
   Expanded buildItem(int index, String title) {
     return Expanded(
       child: GestureDetector(
@@ -500,8 +503,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
         child: Container(
           padding: EdgeInsets.all(15),
           decoration: BoxDecoration(
-            color:
-                selectedIndex == index ? ListColor.selectedColor : Colors.white,
+            color: selectedIndex == index ? ListColor.selectedColor : Colors.white,
             borderRadius: BorderRadius.circular(20),
           ),
           child: ComponentTextDescription(
@@ -518,3 +520,4 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
     );
   }
 }
+

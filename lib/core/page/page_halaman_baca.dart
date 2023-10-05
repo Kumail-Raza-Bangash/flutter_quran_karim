@@ -16,6 +16,8 @@ import '../controller/controller_halaman_utama.dart';
 class PageHalamanBaca extends StatefulWidget {
   static String? routeName = "/PageHalamanBaca";
 
+  const PageHalamanBaca({super.key});
+
   @override
   State<PageHalamanBaca> createState() => _PageHalamanBacaState();
 }
@@ -36,6 +38,7 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
   late Source audioUrl;
   @override
   Widget build(BuildContext context) {
+    // ignore: todo
     // TODO: implement build
     audioPlayer = AudioPlayer();
 
