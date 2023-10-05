@@ -219,7 +219,6 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                         borderRadius: BorderRadius.circular(20)),
                     child: Row(children: [
                       buildItem(0, "Surah"),
-                      buildItem(1, "Doa Pendek"),
                     ]),
                   ),
                   SizedBox(
