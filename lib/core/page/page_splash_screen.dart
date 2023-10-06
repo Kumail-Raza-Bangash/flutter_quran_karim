@@ -72,20 +72,25 @@ class _PageHalamanSplashScreenState extends State<PageHalamanSplashScreen> {
                 fontWeight: FontWeight.bold,
                 teksColor: ListColor.warnaTeksPutihGlobal,
               ),
-              SizedBox(
-                height: 20.h,
-                ),
-                
-                ComponentTextDescription(
-                  "theKami",
-                  fontSize: size.sizeTextDescriptionGlobal.sp,
-                  fontWeight: FontWeight.bold,
-                  teksColor: ListColor.warnaTeksPutihGlobal,
-                  ),
             ],
           ),
         )
       ],
-    ));
+    ),
+
+    bottomSheet: Container(
+      color: Colors.black,  // Adjust the color as needed
+      padding: EdgeInsets.all(16.0),
+      child: Center(
+        child: ComponentTextDescription(
+          "theKami",
+          fontSize: size.sizeTextDescriptionGlobal.sp,
+          fontWeight: FontWeight.bold,
+          teksColor: ListColor.warnaTeksPutihGlobal,
+        ),
+      ),
+    ),
+
+    );
   }
 }

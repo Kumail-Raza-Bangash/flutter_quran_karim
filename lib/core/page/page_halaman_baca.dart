@@ -146,7 +146,7 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
                         margin: EdgeInsets.symmetric(
                             horizontal: size.sizeSymetricMarginPage.w),
                         child: ComponentTextDescription(
-                          "Dengan menyebut nama Allah Yang Maha Pengasih lagi Maha Penyayang",
+                          "In the name of Allah, the Most Gracious, the Most Merciful.",
                           fontSize: size.sizeTextDescriptionGlobal.sp,
                           teksColor: ListColor.warnaTeksHitamGlobal,
                           maxLines: 2,
