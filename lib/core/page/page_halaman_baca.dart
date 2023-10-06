@@ -108,7 +108,7 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
                       margin: EdgeInsets.symmetric(
                           horizontal: size.sizeSymetricMarginPage.w),
                       child: ComponentTextDescription(
-                        "Qari Bacaan",
+                        "Qari",
                         fontSize: size.sizeTextDescriptionGlobal.sp,
                         fontWeight: FontWeight.bold,
                         teksColor: ListColor.warnaTeksPutihGlobal,

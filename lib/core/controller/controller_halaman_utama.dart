@@ -32,12 +32,12 @@ class ControllerHalamanUtama extends GetxController {
 
   void setSelectionSurat(int select) {
     selectionSurat.value = select;
-    print("Surat Berhasil Dipilih");
+    print("Letter Selected Successfully");
   }
 
   void setNamaSuratDiPilih(String namaSurat) {
     namaSuratDiPilih.value = namaSurat;
-    print("Surat Berhasil Di Set");
+    print("Letter Set Successfully");
   }
 
   String get getNamaSurat => namaSuratDiPilih.value;
