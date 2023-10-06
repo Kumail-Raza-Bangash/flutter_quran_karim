@@ -67,30 +67,46 @@ class _PageHalamanSplashScreenState extends State<PageHalamanSplashScreen> {
                 height: 20.h,
               ),
               ComponentTextDescription(
-                "Baca Al-Quran Dengan Mudah",
+                "Read Al-Quran Easily",
                 fontSize: size.sizeTextDescriptionGlobal.sp,
                 fontWeight: FontWeight.bold,
                 teksColor: ListColor.warnaTeksPutihGlobal,
               ),
+              
+             
+
+
             ],
           ),
-        )
+        ),
+
+
+        
+              // Add a Positioned widget to position the text 5px from the bottom of the page
+              Center(
+                child: Column(
+                  children: [
+                    Spacer(),
+                    Positioned(
+                      bottom: 15.h,
+                      right: 0,
+                      left: 0,
+                      child: ComponentTextDescription(
+                        "theKami",
+                        fontSize: size.sizeTextDescriptionGlobal.sp,
+                        teksColor: ListColor.warnaTeksPutihGlobal,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+
       ],
     ),
 
-    bottomSheet: Container(
-      color: Colors.black,  // Adjust the color as needed
-      padding: EdgeInsets.all(16.0),
-      child: Center(
-        child: ComponentTextDescription(
-          "theKami",
-          fontSize: size.sizeTextDescriptionGlobal.sp,
-          fontWeight: FontWeight.bold,
-          teksColor: ListColor.warnaTeksPutihGlobal,
-        ),
-      ),
-    ),
 
+    
     );
   }
 }
