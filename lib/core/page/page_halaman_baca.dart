@@ -217,8 +217,8 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
                                   return WidgetSurat(
                                     nomorAyat: index.toString(),
                                     arti: listAyat![index].teksIndonesia,
-                                    ayat: listAyat![index].teksArab,
-                                    latin: listAyat![index].teksLatin,
+                                    ayat: listAyat[index].teksArab,
+                                    latin: listAyat[index].teksLatin,
                                     urlSuaraBacaan: urlSuaraBacaan,
                                   );
                                 },
@@ -290,8 +290,8 @@ class _PageHalamanBacaState extends State<PageHalamanBaca>
                                   return WidgetSurat(
                                     nomorAyat: index.toString(),
                                     arti: listAyat![index].teksIndonesia,
-                                    ayat: listAyat![index].teksArab,
-                                    latin: listAyat![index].teksLatin,
+                                    ayat: listAyat[index].teksArab,
+                                    latin: listAyat[index].teksLatin,
                                     urlSuaraBacaan: urlSuaraBacaan,
                                   );
                                 },

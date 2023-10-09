@@ -1,9 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_quran_karim/res/colors/list_color.dart';
 
 class DecorationContainer {
-  static BoxDecoration boxDecorationDefault = BoxDecoration(
+  static BoxDecoration boxDecorationDefault = const BoxDecoration(
     gradient: LinearGradient(
       colors: [
         Color.fromARGB(255, 75, 187, 119), // #08F4F9

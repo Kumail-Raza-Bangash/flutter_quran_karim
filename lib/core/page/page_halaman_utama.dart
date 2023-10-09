@@ -251,7 +251,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
                                     onTap: () {},
                                     child: cardJuz(
                                         noJuz:
-                                            listData![index].nomor.toString(),
+                                            listData[index].nomor.toString(),
                                         namaJuz:
                                             listData[index].nama.toString(),
                                         namaLatin: listData[index]
@@ -415,7 +415,7 @@ class _PageHalamanUtamaState extends State<PageHalamanUtama> {
               onTap: () {
                 controller.setNamaSuratDiPilih(namaJuz!);
                 controller.nomorSurah.value = noJuz!;
-                controller.setSelectionSurat(int.parse(noJuz!));
+                controller.setSelectionSurat(int.parse(noJuz));
                 controller.descBawah.value =
                     "${tempatTurun} * ${jumlahAyat} AYAT";
                 controller.arti.value = "$arti";
