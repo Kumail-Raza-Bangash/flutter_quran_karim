@@ -15,14 +15,13 @@ Discover the beauty and wisdom of the Quran through this dedicated Flutter proje
 
 ## Screenshots
 ### Splash Screen
-![Quran 01](https://github.com/Kumail-Raza-Bangash/flutter_quran_karim/assets/60749099/6f953f89-857b-4290-9ead-36cd4dfdfaba)
+![Quran 01](https://github.com/Kumail-Raza-Bangash/flutter_quran_karim/assets/60749099/bc4cfb9d-8341-4eac-af87-57a963767018)
 
 ### Home Screen
-![Quran 02](https://github.com/Kumail-Raza-Bangash/flutter_quran_karim/assets/60749099/82f8b4de-c0fb-46b3-9fe8-36ea899a9005)
+![Quran 02](https://github.com/Kumail-Raza-Bangash/flutter_quran_karim/assets/60749099/79a9a216-0b5c-49f2-80c6-0eaf040646a2)
 
 ### Surah Screen
-![Quran 03](https://github.com/Kumail-Raza-Bangash/flutter_quran_karim/assets/60749099/d3c44814-b882-4451-b6f5-b45a3a41b134)
-
+![Quran 03](https://github.com/Kumail-Raza-Bangash/flutter_quran_karim/assets/60749099/93447e52-f1a2-4b9a-a93a-f94db3eb2fc1)
 
 ## How to use
 To run the app on your local machine, follow these steps:
